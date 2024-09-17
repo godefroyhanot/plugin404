@@ -12,9 +12,9 @@ Domain Path: /languages
 */
 
 // Hook pour intercepter les erreurs 404
-add_filter('template_include', 'custom_404_template');
+add_action('template_redirect', 'custom_404_redirect');
 
-function custom_404_template($templates) {
+function custom_404_redirect() {
     if (is_404()) {
         // Tableau des différents modèles de pages 404
         $templates = array(
@@ -28,14 +28,8 @@ function custom_404_template($templates) {
         // Sélectionne un modèle aléatoire
         $random_template = $templates[array_rand($templates)];
 
-        // Affiche le modèle de page 404 sélectionné
-        error_log('Selected 404 template: ' . $random_template);
-
         // Redirige vers le modèle de page 404 sélectionné
         wp_redirect($random_template);
         exit;
     }
 }
-
-
-
