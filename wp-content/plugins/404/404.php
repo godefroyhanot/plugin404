@@ -18,11 +18,11 @@ function custom_404_redirect() {
     if (is_404()) {
         // Tableau des différents modèles de pages 404
         $templates = array(
-            'https://tsparticles.github.io/404-templates/glitch/404.html',
-            'https://tsparticles.github.io/404-templates/masked/404.html',
-            'https://tsparticles.github.io/404-templates/jitter/404.html',
-            'https://tsparticles.github.io/404-templates/imposter/404.html',
-            'https://tsparticles.github.io/404-templates/playful/404.html'
+            plugins_url('404/templates/burning/404.html', __FILE__),
+            plugins_url('404/templates/desert/404.html', __FILE__),
+            plugins_url('404/templates/fireworks/404.html', __FILE__),
+            plugins_url('404/templates/imposter/404.html', __FILE__),
+            plugins_url('404/templates/matrix/404.html', __FILE__)
         );
 
         // Sélectionne un modèle aléatoire
