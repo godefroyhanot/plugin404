@@ -1,4 +1,4 @@
 <?php get_header(); ?>
 
-Hello la classe!
+Hello World!
 <?php get_footer(); ?>
