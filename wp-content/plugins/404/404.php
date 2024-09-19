@@ -30,6 +30,6 @@ function custom_404_redirect() {
 
         // Redirige vers le modèle de page 404 sélectionné
         wp_redirect($random_template);
-        exit;
+        exit; // Arrête l'exécution après la redirection
     }
 }
