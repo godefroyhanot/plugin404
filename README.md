@@ -29,8 +29,10 @@ Custom 404 est un plugin WordPress qui redirige les utilisateurs vers des pages 
 
 1. Télécharge et extrait le fichier ZIP du plugin.
 2. Transfère le dossier `404` dans le répertoire `/wp-content/plugins/`.
-3. Active le plugin via le menu **Extensions** dans WordPress.
-4. (Optionnel) Personnalise les fichiers HTML des modèles 404 dans le répertoire `/wp-content/plugins/404/templates/`.
+3. Ajouter cette ligne dans le .htaccess : "ErrorDocument 404 /wordpress/".
+4. Modification du httpd.conf : "AllowOverride none" par "AllowOverride All".
+5. Active le plugin via le menu **Extensions** dans WordPress.
+6. (Optionnel) Personnalise les fichiers HTML des modèles 404 dans le répertoire `/wp-content/plugins/404/templates/`.
     
 ## FAQ
 
