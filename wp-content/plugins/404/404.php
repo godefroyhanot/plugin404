@@ -18,11 +18,11 @@ function custom_404_redirect() {
     if (is_404()) {
         // Tableau des différents modèles de pages 404
         $templates = array(
-            plugins_url('404/templates/burning/404.html', __FILE__),
-            plugins_url('404/templates/desert/404.html', __FILE__),
-            plugins_url('404/templates/fireworks/404.html', __FILE__),
-            plugins_url('404/templates/imposter/404.html', __FILE__),
-            plugins_url('404/templates/matrix/404.html', __FILE__)
+            plugins_url('templates/burning/404.html', __FILE__),
+            plugins_url('templates/desert/404.html', __FILE__),
+            plugins_url('templates/fireworks/404.html', __FILE__),
+            plugins_url('templates/imposter/404.html', __FILE__),
+            plugins_url('templates/matrix/404.html', __FILE__)
         );
 
         // Sélectionne un modèle aléatoire
