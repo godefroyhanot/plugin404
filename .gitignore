@@ -22,3 +22,5 @@ wp-config.php
 *.log
 
 /.htaccess
+
+.DS_store
