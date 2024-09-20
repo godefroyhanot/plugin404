@@ -13,8 +13,20 @@ Domain Path: /languages
 
 // Hook pour intercepter les erreurs 404
 add_action('template_redirect', 'custom_404_redirect');
+add_action('pre_handle_404', 'custom_404_redirect');
+add_action('init', 'custom_404_redirect');
+
+
+add_filter("pre_handle_404", function ($test){
+    var_dump($test);
+    return "HELLO";
+});
+
+
 
 function custom_404_redirect() {
+    var_dump(is_404());
+    // die(is_404());
     if (is_404()) {
         // Tableau des différents modèles de pages 404
         $templates = array(
