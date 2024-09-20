@@ -1,5 +1,17 @@
+### Custom 404 ###
 
-# Project Title
+Contributors: Godefroy
+Tags: 404, custom error page, redirect, WordPress
+Requires at least: 5.0
+Tested up to: 6.0
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Redirige les utilisateurs vers différents modèles de pages 404 personnalisés.
+
+
+# Description
 
 Custom 404 est un plugin WordPress qui redirige les utilisateurs vers des pages 404 personnalisées. Il sélectionne aléatoirement un modèle de page 404 à chaque fois qu'une page inexistante est visitée. Ce plugin est utile pour améliorer l'expérience utilisateur sur des pages introuvables.
 
